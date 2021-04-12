@@ -1,0 +1,634 @@
+      /*Global styles*/
+      
+      *,
+      *::before,
+      *::after {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      
+      img {
+          width: 100%;
+          max-width: 100%;
+      }
+      
+      a {
+          text-decoration: none;
+      }
+      
+      header {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          transition: .6s;
+          z-index: 1000;
+      }
+      
+      nav {
+          position: relative;
+          padding: .8rem 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: .6s;
+      }
+      
+      .logo {
+          width: 6rem;
+      }
+      
+      .nav-list {
+          position: absolute;
+          height: 80vh;
+          width: 100vw;
+          top: 0;
+          right: 0;
+          text-align: center;
+          background: #ac723c;
+          font-weight: 400;
+          letter-spacing: 2px;
+          padding: 3rem;
+          transform: translateX(100%);
+          transition: .6s;
+          z-index: 1250;
+      }
+      
+      .nav-link {
+          margin: 1rem;
+      }
+      
+      .nav-link a {
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: rgb(255, 255, 255);
+      }
+      
+      .socials {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 1.8rem;
+      }
+      
+      .menu {
+          color: #ffffff;
+          font-size: 1.5rem;
+          cursor: pointer;
+          z-index: 1500;
+      }
+      
+      .menu .fa-times {
+          display: none;
+      }
+      /**Styles for JS menu **/
+      
+      .open .fa-times {
+          display: block;
+      }
+      
+      .open .fa-bars {
+          display: none;
+      }
+      
+      .open .nav-list {
+          transform: translateX(0);
+      }
+      /**Banner styles**/
+      
+      .banner {
+          background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.466)), url("Bg.jpg") no-repeat;
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80vh;
+      }
+      
+      @font-face {
+          font-family: 'GreatVibes-regular';
+          src: url(GreatVibes-Regular.ttf);
+          font-style: normal;
+          font-weight: 100;
+          font-size: larger;
+          color: white;
+      }
+      
+      .banner h2 {
+          font-family: GreatVibes-Regular;
+          font-weight: thin;
+          color: white;
+          font-size: 4.8rem;
+          line-height: 70px;
+      }
+      
+      .banner h4 {
+          color: #ffffff;
+          font-size: 2.3rem;
+          letter-spacing: 1px;
+          line-height: 30px;
+      }
+      
+      .banner p {
+          color: #cecece;
+          font-weight: 300;
+          letter-spacing: 1.6px;
+      }
+      /***About Us styles section***/
+      
+      .img-col {
+          background-position: center;
+          background-size: contain;
+      }
+      
+      .img-text {
+          background: url(About\ bg.jpg)no-repeat;
+          background-position: center;
+          padding: 2rem;
+      }
+      
+      .img-text h1 {
+          font-size: 1.2rem;
+          font-weight: bolder;
+          margin: 1.5rem 0;
+          font-size: 30px;
+      }
+      
+      .img-text p {
+          color: #ffffff;
+          font-weight: 500;
+          font-size: .5rem;
+          font-size: 15px;
+      }
+      /****What we do styles section***/
+      
+      .what-we-do {
+          background-color: lightblue;
+          width: 100vw;
+          height: 50vh;
+          background: url("SERVICES\ BANNER.jpg") no-repeat;
+          background-position: center;
+          background-size: contain;
+          text-align: center;
+      }
+      
+      .what-text h1 {
+          font-size: 1.7rem;
+          padding-top: 3rem;
+      }
+      
+      .design-logos {
+          margin: .5rem;
+      }
+      
+      .logo-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: .6rem;
+      }
+      
+      .logo-row img {
+          width: 2rem;
+      }
+      /***Gallery styles***/
+      
+      .gallery {
+          padding: 1rem 2rem;
+      }
+      
+      .GalleryBg {
+          height: 90vh;
+          background: url(GalleryBG.jpg);
+          text-align: center;
+          color: white;
+          text-transform: uppercase;
+      }
+      
+      .title h1 {
+          padding-top: 1rem;
+          font-size: 2rem;
+          letter-spacing: 2px;
+      }
+      
+      .container-Images>.row {
+          padding: 0 40px;
+      }
+      
+      .container-Images {
+          padding-top: 2rem;
+      }
+      /* Clear floats after the columns */
+      
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      /***Contact styles***/
+      
+      .left {
+          height: 84vh;
+          background: url("Contact.jpg") no-repeat;
+          background-position: center;
+          padding-bottom: 5px;
+      }
+      
+      .right {
+          padding-left: 1.3rem;
+      }
+      
+      .contact-details {
+          padding: 5rem 1rem;
+      }
+      /****Footer styles section***/
+      
+      footer {
+          background-color: black;
+      }
+      
+      .card {
+          background-color: black;
+      }
+      
+      .card-body {
+          background-color: black;
+      }
+      
+      .photo {
+          padding: 3rem;
+      }
+      
+      .card-text2 {
+          padding-top: 1rem;
+          margin-top: 1rem;
+      }
+      
+      .card-text {
+          padding-left: 7rem;
+      }
+      
+      .card-text2 {
+          color: white;
+          padding-left: 9rem;
+      }
+      
+      .card-text ul {
+          padding-top: 1rem;
+      }
+      
+      .card-text li {
+          margin: .5rem;
+      }
+      
+      .card-text2 i {
+          margin: .5rem;
+      }
+      
+      .card-title {
+          color: white;
+          padding-left: 9.4rem;
+          font-size: 1.5rem;
+          /* text-decoration: underline; */
+          /* text-decoration-color: #ac723c; */
+      }
+      
+      .underline h5 {
+          letter-spacing: 2px;
+      }
+      
+      .underline {
+          position: relative;
+      }
+      
+      .underline:after {
+          content: "";
+          position: absolute;
+          /*position the underline using left and bottom property*/
+          left: 9.5rem;
+          width: 60px;
+          margin: 1px;
+          /* adjust the width of underline as you like*/
+          border-bottom: 2px solid #ac723c;
+          /* adjust the underline width and color as you like*/
+      }
+      
+      @font-face {
+          font-family: 'GreatVibes-regular';
+          src: url(GreatVibes-Regular.ttf);
+          font-style: normal;
+          font-weight: 100;
+          font-size: larger;
+          color: white;
+      }
+      
+      h2 {
+          font-family: GreatVibes-Regular;
+          font-weight: thin;
+          color: white;
+          font-size: 100px;
+      }
+      
+      .underline-small {
+          position: relative;
+      }
+      
+      .underline-small::after {
+          content: "";
+          width: 100px;
+          position: absolute;
+          left: 11.8rem;
+          bottom: -5px;
+          border-bottom: 2px solid #ac723c;
+      }
+      
+      .underline-about {
+          position: relative;
+          color: white;
+      }
+      
+      .underline-about::after {
+          content: "";
+          height: 5px;
+          width: 60px;
+          position: absolute;
+          left: 2px;
+          bottom: -9px;
+          border-bottom: 3px solid white;
+      }
+      
+      .underline-gallery {
+          position: relative;
+          color: white;
+          top: 36px;
+          padding-top: 35px;
+      }
+      
+      .underline-gallery::after {
+          content: "";
+          height: 9px;
+          width: 125px;
+          position: absolute;
+          left: 8.1rem;
+          bottom: -14px;
+          border-bottom: 3px solid white;
+      }
+      
+      .our-work {
+          padding-top: 24px;
+      }
+      
+      .underline-contact {
+          position: relative;
+          color: black;
+      }
+      
+      .underline-contact::after {
+          content: "";
+          height: 6px;
+          width: 140px;
+          position: absolute;
+          left: 7px;
+          bottom: -9px;
+          border-bottom: 2px solid #ac723c;
+      }
+      
+      .card-text:hover {
+          background: black;
+      }
+      /* Gallery */
+      
+      .title {
+          text-align: center;
+          color: white;
+          text-transform: uppercase;
+      }
+      /* Create four equal columns that floats next to each other */
+      
+      .copy {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffffd0;
+          background-color: black;
+      }
+      
+      .copy h5,
+      h6 {
+          font-size: .8rem;
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 2px;
+      }
+      
+      .copy h6 {
+          margin-left: .5rem;
+      }
+      
+      .container-Images>.row>.col-sm-4 {
+          background-color: white;
+          height: 90px;
+          width: 22.5%;
+          padding: 1px;
+          margin: 4px;
+          box-sizing: border-box;
+          margin-bottom: 3px;
+          border-right: 10px;
+          padding-top: 8px;
+      }
+      /*****Mobile queries Desktop*****/
+      
+      @media only screen and (min-width:700px) {
+          header {
+              padding: 0 5rem;
+          }
+          .logo {
+              width: 10rem;
+          }
+          .banner {
+              width: 100vw;
+              height: 100vh;
+          }
+          .menu .fa-bars {
+              display: none;
+          }
+          .menu .fa-times {
+              display: none;
+          }
+          .nav-list {
+              position: initial;
+              width: initial;
+              height: initial;
+              display: flex;
+              background-color: transparent;
+              padding: 0;
+              transform: initial;
+          }
+          .nav-link {
+              padding: initial;
+          }
+          .nav-list a {
+              font-weight: 400;
+              font-size: 1rem;
+              padding: 0;
+          }
+          .socials i {
+              font-size: 1.4rem;
+          }
+          .banner h2 {
+              font-size: 104px;
+              line-height: 100px;
+          }
+          .banner h4 {
+              font-size: 49px;
+              letter-spacing: 1px;
+              line-height: 40px;
+          }
+          .banner p {
+              font-size: 21px;
+              font-weight: 300;
+              letter-spacing: 2.1px;
+          }
+          .rightside,
+          .h1 {
+              padding: 8rem 10%;
+          }
+          .rightside,
+          .p {
+              font-size: 14px;
+          }
+          /****What we do styles section***/
+          .what-we-do {
+              width: 100vw;
+              height: 100vh;
+              background-size: cover;
+              text-align: center;
+          }
+          .what-text h1 {
+              font-size: 40px;
+          }
+          .logo-row {
+              font-size: 1rem;
+              padding: 2.5rem 10rem;
+          }
+          .logo-row img {
+              width: 4rem;
+          }
+          .gallery {
+              padding: 2rem 4rem;
+          }
+          .column {
+              width: 10%;
+              padding: 100px;
+              height: 190px;
+          }
+          .card-body {
+              padding-top: 7rem;
+          }
+          .column {
+              width: 20.5%;
+              padding: 12px;
+              height: 185px;
+              /* the column height */
+              box-sizing: border-box;
+              border: 1px solid #ac723c;
+              margin-bottom: 5px;
+              margin: 4px;
+          }
+          .cells,
+          .cells2 {
+              padding-left: 14%;
+          }
+          .underline-small {
+              position: relative;
+          }
+          .underline-small::after {
+              content: "";
+              width: 165px;
+              position: absolute;
+              left: 34.1rem;
+              bottom: -5px;
+              border-bottom: 4px solid #ac723c;
+          }
+          .underline-gallery {
+              position: relative;
+              color: white;
+              top: 36px;
+              padding-top: 35px;
+          }
+          .underline-gallery::after {
+              content: "";
+              height: 9px;
+              width: 125px;
+              position: absolute;
+              left: 30rem;
+              bottom: -14px;
+              border-bottom: 3px solid white;
+          }
+          .title h1 {
+              font-size: 38px;
+              letter-spacing: 2px;
+          }
+          .underline-contact {
+              position: relative;
+              color: black;
+          }
+          .underline-contact::after {
+              content: "";
+              height: 6px;
+              width: 140px;
+              position: absolute;
+              left: 7px;
+              bottom: -9px;
+              border-bottom: 4px solid #ac723c;
+          }
+          .underline-about {
+              position: relative;
+              color: white;
+              font-size: .6rem;
+          }
+          .underline-about::after {
+              content: "";
+              height: 5px;
+              width: 151px;
+              position: absolute;
+              left: 2px;
+              bottom: -9px;
+              border-bottom: 4px solid white;
+          }
+          .about {
+              height: 90vh;
+          }
+          .img-text h1 {
+              font-size: 3rem;
+              font-weight: bolder;
+              margin: 2rem 0;
+          }
+          .img-text p {
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 1rem;
+          }
+          .left {
+              height: 120vh;
+              background-position: center;
+          }
+          .container-Images>.row {
+              padding: 0 80px;
+          }
+          .container-Images>.row>.col-sm-4 {
+              background-color: white;
+              height: 150px;
+              width: 22.5%;
+              padding: 1px;
+              margin: 4px;
+              box-sizing: border-box;
+              margin-bottom: 0px;
+              border-right: 10px;
+              padding-top: 10px;
+          }
+      }
