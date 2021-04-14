@@ -99,7 +99,7 @@
       /**Banner styles**/
       
       .banner {
-          background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.466)), url("Bg.jpg") no-repeat;
+          background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.466)), url("Images/Bg.jpg") no-repeat;
           background-position: center;
           background-size: cover;
           display: flex;
@@ -110,7 +110,7 @@
       
       @font-face {
           font-family: 'GreatVibes-regular';
-          src: url(GreatVibes-Regular.ttf);
+          src: url(Fonts/GreatVibes-Regular.ttf);
           font-style: normal;
           font-weight: 100;
           font-size: larger;
@@ -145,7 +145,7 @@
       }
       
       .img-text {
-          background: url(About\ bg.jpg)no-repeat;
+          background: url(Images/About\ bg.jpg)no-repeat;
           background-position: center;
           padding: 2rem;
       }
@@ -169,7 +169,7 @@
           background-color: lightblue;
           width: 100vw;
           height: 50vh;
-          background: url("SERVICES\ BANNER.jpg") no-repeat;
+          background: url("Images/SERVICES\ BANNER.jpg") no-repeat;
           background-position: center;
           background-size: contain;
           text-align: center;
@@ -203,7 +203,7 @@
       
       .GalleryBg {
           height: 90vh;
-          background: url(GalleryBG.jpg);
+          background: url(Images/GalleryBG.jpg);
           text-align: center;
           color: white;
           text-transform: uppercase;
@@ -233,7 +233,7 @@
       
       .left {
           height: 84vh;
-          background: url("Contact.jpg") no-repeat;
+          background: url("Images/Contact.jpg") no-repeat;
           background-position: center;
           padding-bottom: 5px;
       }
@@ -319,7 +319,7 @@
       
       @font-face {
           font-family: 'GreatVibes-regular';
-          src: url(GreatVibes-Regular.ttf);
+          src: url(Fonts/GreatVibes-Regular.ttf);
           font-style: normal;
           font-weight: 100;
           font-size: larger;
